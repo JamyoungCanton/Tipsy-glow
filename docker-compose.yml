@@ -1,0 +1,10 @@
+services:
+  maison-mani:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: maison-mani:latest
+    container_name: maison-mani
+    ports:
+      - "8080:80"
+    restart: unless-stopped
